@@ -72,7 +72,7 @@ jobs:
       - store_artifacts:
           path: android/app/build/outputs/apk
       - store_artifacts:
-          path: android/app/build/outputs/aab
+          path: android/app/build/outputs/bundle
       #     path: android/app/src/main/assets/public
       - store_test_results: 
           path: android/app/build/test-results
