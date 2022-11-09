@@ -69,11 +69,10 @@ jobs:
       - store_artifacts: # for display in Artifacts: https://circleci.com/docs/2.0/artifacts/
           path: android/app/build/reports
           destination: reports
-      - store_artifacts: # for display in Artifacts: https://circleci.com/docs/2.0/artifacts/
+      - store_artifacts:
           path: android/app/build/outputs/apk
-      # - store_artifacts: # for display in Artifacts: https://circleci.com/docs/2.0/artifacts/
       #     path: android/app/src/main/assets/public
-      - store_test_results: # for display in Test Summary: https://circleci.com/docs/2.0/collect-test-data/
+      - store_test_results: 
           path: android/app/build/test-results
       - persist_to_workspace:
           root: android/app/build/outputs
