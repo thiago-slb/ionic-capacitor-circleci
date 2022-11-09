@@ -11,7 +11,7 @@ workflows:
 jobs:
   build_yarn:
     docker:
-      - image: circleci/node:16-browsers
+      - image: cimg/node:16-browsers
     steps:
       - checkout
       - restore_cache:
@@ -33,7 +33,7 @@ jobs:
             - ./*
   build_android:
     docker:
-      - image: circleci/android:api-29-node
+      - image: cimg/android:api-29-node
     environment:
       JVM_OPTS: -Xmx3200m
     steps:
