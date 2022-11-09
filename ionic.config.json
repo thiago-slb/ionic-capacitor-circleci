@@ -1,0 +1,7 @@
+{
+  "name": "circleci-ci-cd",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
