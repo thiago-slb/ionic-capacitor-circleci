@@ -60,6 +60,7 @@ jobs:
           name: Build debug APK and release APK
           command: |
             cd android
+            ./gradlew :app:bundle
             ./gradlew :app:assembleDebug
             # ./gradlew :app:assembleRelease
             # ./gradlew :app:assembleDebugAndroidTest
