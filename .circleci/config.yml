@@ -1,0 +1,21 @@
+version: 2.1
+
+orbs:
+ android: circleci/android@0.2.0
+
+jobs:
+  android-build:
+    executor: android/android
+    working_directory: ~/repo/android
+    steps:
+      - checkout
+      - run:
+        command: ./gradlew build
+
+          
+workflows:
+  build_and_test:
+    jobs:
+      - android-build
+
+# VS Code Extension Version: 1.0.2
